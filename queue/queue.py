@@ -1,4 +1,9 @@
+import sys
+sys.path.append('../singly_linked_list')
+from singly_linked_list import LinkedList
+
 """
+
 A queue is a data structure whose primary purpose is to store and
 return elements in First In First Out order. 
 
@@ -17,6 +22,7 @@ class Queue:
     def __init__(self):
         self.size = 0
         # self.storage = ?
+        self.storage = LinkedList()
     
     def __len__(self):
         pass
